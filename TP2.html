@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="stylesheet" href="styletp2.css"/>
+</head>
+<body>
+  <h2 class="contact">Contact Us</h2>
+  <p class="subtitle">Any question or remarks? Just write us a message!</p>
+  <div class="container">  
+    <div class="contact-info">
+      <h2 style="margin-top: -3%;">Contact Information</h2>
+      <p style="margin-top: -5%;">Fill up the form and our Team will get back to you within 24 hours.</p>
+      <div class="info-item"><i class="fas fa-phone"></i> +237 671 39 49 10</div>
+      <div class="info-item"><i class="fas fa-envelope"></i> dd9159360@gmail.com</div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i> Douala, Cameroon</div>
+      <div class="socials">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <div class="decor1"></div>
+      <div class="decor"></div>
+    </div>
+    <form class="contact-form" id="contactForm" autocomplete="on">
+      <div class="row">
+        <div class="field">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" required />
+          <div class="error" id="firstname-error"></div>
+        </div>
+        <div class="field">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" required />
+          <div class="error" id="lastname-error"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="email">Mail</label>
+          <input type="email" id="email" name="email" required />
+          <div class="error" id="email-error"></div>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+          <div class="error" id="phone-error"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field full">
+          <label>What type of website do you need?</label>
+          <div class="checkbox-group">
+            <label><input type="radio" name="type" value="Web Design" required> Web Design</label>
+            <label><input type="radio" name="type" value="Web Development"> Web Development</label>
+            <label><input type="radio" name="type" value="Logo Design"> Logo Design</label>
+            <label><input type="radio" name="type" value="Other"> Other</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="2"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="send-btn">Send Message</button>
+      <div class="error" id="form-error"></div>
+    </form>
+  </div>
+  <script src="tp2.js"></script>
+</body>
+</html>
